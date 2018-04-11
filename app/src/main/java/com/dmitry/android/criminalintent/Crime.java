@@ -1,8 +1,8 @@
 package com.dmitry.android.criminalintent;
 
+
 import java.util.Date;
 import java.util.UUID;
-
 
 public class Crime {
     private UUID mId;
@@ -19,6 +19,14 @@ public class Crime {
         return mId;
     }
 
+    public boolean isSolved() {
+        return mSolved;
+    }
+
+    public void setSolved(boolean solved) {
+        mSolved = solved;
+    }
+
     public String getTitle() {
         return mTitle;
     }
@@ -33,13 +41,5 @@ public class Crime {
 
     public void setDate(Date date) {
         mDate = date;
-    }
-
-    public boolean isSolved() {
-        return mSolved;
-    }
-
-    public void setSolved(boolean solved) {
-        mSolved = solved;
     }
 }
