@@ -1,6 +1,9 @@
 package com.dmitry.android.criminalintent;
 
 
+import android.content.Context;
+import android.text.format.DateFormat;
+
 import java.util.Date;
 import java.util.UUID;
 
