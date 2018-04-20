@@ -56,7 +56,7 @@ public class CrimeListFragment extends Fragment {
         public void bind(Crime crime){
             mCrime = crime;
             mTitleTextView.setText(mCrime.getTitle());
-            mDateTextView.setText(DateFormat.getLongDateFormat(getContext()).format(mCrime.getDate()));
+            mDateTextView.setText(DateFormat.format("EEEE, MMM d, yyyy", mCrime.getDate()));
             mSolvedImageView.setVisibility(mCrime.isSolved()?View.VISIBLE:View.GONE);
         }
 
@@ -90,6 +90,4 @@ public class CrimeListFragment extends Fragment {
             return mCrimes.size();
         }
     }
-
-
 }
